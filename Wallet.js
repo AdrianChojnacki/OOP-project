@@ -2,10 +2,10 @@ class Wallet {
   constructor(money) {
     let _money = money;
 
-    // Pobieranie aktualnej wartości portfela
+    // Pobranie aktualnej wartości portfela
     this.getWalletValue = () => _money;
 
-    // Sprawdzanie czy użytkownik posiada odpowiednią ilość środków
+    // Sprawdzenie czy użytkownik posiada odpowiednią ilość środków
     this.checkCanPlay = (value) => {
       if (_money >= value) return true;
       return false;
@@ -28,5 +28,3 @@ class Wallet {
     };
   }
 }
-
-const wallet = new Wallet(200);
