@@ -12,7 +12,7 @@ class Wallet {
     };
 
     // Aktualizacja stanu portfela
-    this.chageWallet = (value, type = "+") => {
+    this.changeWallet = (value, type = "+") => {
       if (typeof value === "number" && !isNaN(value)) {
         if (type === "+") {
           return (_money += value);
