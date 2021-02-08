@@ -50,7 +50,7 @@ class Game {
     const bid = Math.floor(this.inputBid.value);
 
     if (!this.wallet.checkCanPlay(bid)) {
-      return alert("Masz za mało środkó lub podana została nieprawidłowa wartość.");
+      return alert("Masz za mało środków lub podana została nieprawidłowa wartość.");
     }
 
     this.wallet.changeWallet(bid, "-");
