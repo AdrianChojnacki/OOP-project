@@ -57,6 +57,7 @@ class Game {
 
     this.draw = new Draw();
 
+    // Rozstrzygnięcie wygranej
     const colors = this.draw.getDrawResult();
     const win = Result.checkWinner(colors);
     const moneyWon = Result.moneyWonInGame(win, bid);
